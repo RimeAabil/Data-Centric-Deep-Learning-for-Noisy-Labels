@@ -2,7 +2,7 @@
 
 This repository contains a comprehensive pipeline for studying and mitigating the effects of label noise in Deep Learning classification tasks. When trained on datasets with corrupted labels, standard models tend to memorize the noise, leading to significant degradation in generalization performance. This project explores robust methods to counteract this phenomenon using an adapted ResNet-18 model on the CIFAR-10 dataset.
 
-## 🗂️ Project Structure
+##  Project Structure
 
 The project is divided into several iterative notebooks:
 - **`NB1_data_noise.ipynb`**: Data preparation and noise injection. Generates synthetic noisy labels (Symmetric and Asymmetric) to simulate real-world scenarios.
@@ -13,7 +13,7 @@ The project is divided into several iterative notebooks:
 
 ---
 
-## 🧠 Neural Network Architecture
+##  Neural Network Architecture
 
 The backbone used across all experiments is **ResNet-18**. Since ResNet-18 was originally designed for ImageNet (224x224 images) and CIFAR-10 contains much smaller images (32x32), the architecture has been specifically adapted to prevent aggressive spatial downsampling:
 
@@ -31,7 +31,7 @@ This architecture offers a sufficient capacity to study the memorization effect,
 
 ---
 
-## 🔬 Methods Used
+##  Methods Used
 
 We evaluate and compare four training methodologies across varying noise configurations. 
 
@@ -56,7 +56,7 @@ An active filtering mechanism that completely drops likely noisy samples from th
 
 ---
 
-## 🧪 Experimental Configurations
+##  Experimental Configurations
 
 All methods are systematically evaluated against 5 configurations:
 1. **0% Noise (Clean)**: Absolute reference.
